@@ -12,9 +12,21 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {},
+			"settings": {
+   		 		"php.validate.executablePath": "/usr/local/bin/php",
+   				"editor.tabSize": 4
+			},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"bmewburn.vscode-intelephense-client",
+                "davidanson.vscode-markdownlint",
+    			"dbaeumer.vscode-eslint",
+    			"esbenp.prettier-vscode",
+   				"felixfbecker.php-debug",
+    			"ikappas.phpcs",
+    			"ms-azuretools.vscode-docker",
+    			"timonwong.shellcheck",
+    			"tyriar.sort-lines"
 			]
 		}
 	},
@@ -28,6 +40,9 @@
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
 	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
